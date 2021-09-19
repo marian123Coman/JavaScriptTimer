@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(234, 17%, 12%);
+    background-image: url('./images/bg-stars.svg');
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0,50%);
+}
+
+.openSoon {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding-bottom: 2%;
+}
+
+.timer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 3rem;
+}
+
+.days , .hours , .minutes , .seconds {
+    position: relative;
+    overflow: hidden;
+}
+
+.days h1 , .hours h1 , .minutes h1 , .seconds h1{
+    color: hsl(345, 95%, 68%);
+    font-size: 8rem;
+    font-weight: bolder;
+    background-color: hsl(236, 21%, 26%);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 15px 0 0 rgb(22, 22, 22);
+}
+
+.circleAfter {
+   position: absolute;
+   top: 47%;
+   left: -3%;
+   width: 20px;
+   height:20px;
+   border-radius: 50%;
+   background-color:rgb(22, 22, 22) ;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    top: 49%;
+    height: 2px;
+    background-color:hsl(234, 17%, 12%) 
+}
+
+.circleBefore {
+    position: absolute;
+    top: 47%;
+    right: -3%;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    background-color:rgb(22, 22, 22);
+}
+
+.days p  {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(100%);
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding: 0;
+    margin: 0;
+}
+.hours p {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(50%);
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.minutes p  {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(40%);
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.seconds p {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(30%);
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.links {
+    position: absolute;
+    bottom: 5rem;
+    z-index: 1;
+    left: 50%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2rem;
+}
+
+.link1:hover {
+    background-color: fill(red);
+    border: stroke(red);
+}
+
+.mountains {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    z-index: -1;
+}
